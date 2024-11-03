@@ -1,12 +1,4 @@
-import streamDeck, {
-    action,
-    JsonValue, KeyAction,
-    KeyDownEvent,
-    SendToPluginEvent,
-    SingletonAction
-} from "@elgato/streamdeck";
-import {allDataCenters, getDataCenterByName, getDataCenterUrl, getPrettyName} from "../tuyaDataCenter";
-import {TuyaState} from "../tuyaState";
+import {action, KeyAction} from "@elgato/streamdeck";
 import {TuyaDevice} from "../tuyaDevice";
 import {TuyaDeviceAction, TuyaDeviceActionSettings} from "./tuyaDeviceAction";
 
