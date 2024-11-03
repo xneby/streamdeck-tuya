@@ -1,0 +1,79 @@
+{
+	"Name": "Tuya",
+	"Version": "0.1.0.0",
+	"Author": "Karol Farbiś",
+	"Actions": [
+		{
+			"Name": "Open Curtain",
+			"UUID": "pl.xneby.tuya.opencurtain",
+			"Icon": "imgs/actions/counter/icon",
+			"Tooltip": "Open curtain.",
+			"PropertyInspectorPath": "ui/open_curtain.html",
+			"Controllers": [
+				"Keypad"
+			],
+			"States": [
+				{
+					"Image": "imgs/actions/counter/key",
+					"TitleAlignment": "middle"
+				}
+			]
+		},
+		{
+			"Name": "Close Curtain",
+			"UUID": "pl.xneby.tuya.closecurtain",
+			"Icon": "imgs/actions/counter/icon",
+			"Tooltip": "Close curtain.",
+			"PropertyInspectorPath": "ui/open_curtain.html",
+			"Controllers": [
+				"Keypad"
+			],
+			"States": [
+				{
+					"Image": "imgs/actions/counter/key",
+					"TitleAlignment": "middle"
+				}
+			]
+		},
+		{
+			"Name": "Weather Info",
+			"UUID": "pl.xneby.tuya.weatherinfo",
+			"Icon": "imgs/actions/counter/icon",
+			"Tooltip": "Close curtain.",
+			"PropertyInspectorPath": "ui/weather_info.html",
+			"Controllers": [
+				"Keypad"
+			],
+			"States": [
+				{
+					"Image": "imgs/actions/counter/key",
+					"TitleAlignment": "middle"
+				}
+			]
+		}
+	],
+	"Category": "Tuya",
+	"CategoryIcon": "imgs/plugin/category-icon",
+	"CodePath": "bin/plugin.js",
+	"Description": "Tuya support for Elgato Stream Deck",
+	"Icon": "imgs/plugin/marketplace",
+	"SDKVersion": 2,
+	"Software": {
+		"MinimumVersion": "6.4"
+	},
+	"OS": [
+		{
+			"Platform": "mac",
+			"MinimumVersion": "10.15"
+		},
+		{
+			"Platform": "windows",
+			"MinimumVersion": "10"
+		}
+	],
+	"Nodejs": {
+		"Version": "20",
+		"Debug": "--inspect=127.0.0.1:50971"
+	},
+	"UUID": "pl.xneby.tuya"
+}

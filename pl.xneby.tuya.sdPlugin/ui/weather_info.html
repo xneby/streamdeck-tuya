@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Open Curtain settings</title>
+    <script src="https://sdpi-components.dev/releases/v3/sdpi-components.js"></script>
+</head>
+<body>
+    <sdpi-item label="Data Center">
+        <sdpi-select setting="dataCenterName"
+                     placeholder="Data Center Name"
+                     datasource="getDataCenters">
+        </sdpi-select>
+    </sdpi-item>
+    <sdpi-item label="Access key">
+        <sdpi-textfield setting="accessKey"></sdpi-textfield>
+    </sdpi-item>
+    <sdpi-item label="Secret key">
+        <sdpi-textfield setting="secretKey"></sdpi-textfield>
+    </sdpi-item>
+    <sdpi-item label="Device Id">
+        <sdpi-textfield setting="deviceId"></sdpi-textfield>
+    </sdpi-item>
+    <sdpi-item label="Channel number">
+        <sdpi-textfield setting="channelId" pattern="/^[123]$/"></sdpi-textfield>
+    </sdpi-item>
+</body>
+</html>
